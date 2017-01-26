@@ -1,7 +1,20 @@
 # Trinomial_Pricer
-Prices European options using the CRR procedure over a trinomial model.
+Overview
+This program can be used to Price European call and put options. Typically, one might do so by using a Binomial modelling of stock prices or perhaps Black-Scholes model but this program bases its calculations upon a Trinomial model. We say at each time step n = 0,1,2, …N a stock could either move upwards, downwards or somewhere in between these two. We call these Possibilities U, D and M respectively. Based upon this assumption we can say that a stock has value:
 
-Applies a procedural programming method to price european options using the CRR procedure over a trinomial model.
+S(n,i,j)=(1+U)^i (1+M)^j (1+D)^((n-i-j))
+
+Where i, j and (n - i - j) denote the number of up-movements, mid-movements and down-movements of the stock respectively.
+
+
+We can then use the Cox-Ross-Rubenstein procedure with backward induction to find the prices of the option H(n,i,j) for each combination of movements at each time step n. The formula is as follows:
+
+H(n,i,j)=(q_U H(n+1,i+1,j)+q_M H(n+1,i,j+1)+q_D H(n+1,i,j))/((1+R))
+
+where q_U,q_M,q_D are the risk neutral probabilities and 1+R is the rate of growth of a risk free security. 
+
+
+
 
 ------------------------------------------------------------------------------
 						Complilation
