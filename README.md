@@ -12,7 +12,7 @@ Easy compilation in code blocks. Just clone then open .cbp file.
 -------------------------------------------------------------------------------
 						How to use .exe
 						
-1.)	Double click Trinomial_fd651.exe to begin the program. A console will appear on screen that will prompt you to enter a value for S_0 (the initial value of the stock). Do so and press enter.
+1.)Compile code and run the resulting .exe. A console will appear on screen that will prompt you to enter a value for S_0 (the initial value of the stock). Do so and press enter.
 
 2.)	The program will proceed to ask for the values of U, M, D, R, and V where V is the volatility of the asset and U, M, D and R are the up-movement mid-movement, down-movement and risk free interest rate respectively. Type the value asked for into the keyboard and Hit enter.
 
