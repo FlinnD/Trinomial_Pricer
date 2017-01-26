@@ -1,6 +1,6 @@
 # Trinomial_Pricer
-Overview
-This program can be used to Price European call and put options. Typically, one might do so by using a Binomial modelling of stock prices or perhaps Black-Scholes model but this program bases its calculations upon a Trinomial model. We say at each time step n = 0,1,2, …N a stock could either move upwards, downwards or somewhere in between these two. We call these Possibilities U, D and M respectively. Based upon this assumption we can say that a stock has value:
+
+This code can be used to Price European call and put options. Typically, one might do so by using a Binomial modelling of stock prices or perhaps Black-Scholes model but this code bases its calculations upon a Trinomial model. We say at each time step n = 0,1,2, …N a stock could either move upwards, downwards or somewhere in between these two. We call these Possibilities U, D and M respectively. Based upon this assumption we can say that a stock has value:
 
 S(n,i,j)=(1+U)^i (1+M)^j (1+D)^((n-i-j))
 
