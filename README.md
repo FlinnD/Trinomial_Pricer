@@ -2,9 +2,9 @@
 
 This code can be used to Price European call and put options. Typically, one might do so by using a Binomial modelling of stock prices or perhaps Black-Scholes model but this code bases its calculations upon a Trinomial model. We say at each time step n = 0,1,2, …N a stock could either move upwards, downwards or somewhere in between these two. We call these Possibilities U, D and M respectively. Based upon this assumption we can say that a stock has value:
 
-S(n,i,j)=(1+U)^i (1+M)^j (1+D)^((n-i-j))
+S(n,i,j)=S(0)(1+U)^i (1+M)^j (1+D)^((n-i-j))
 
-Where i, j and (n - i - j) denote the number of up-movements, mid-movements and down-movements of the stock respectively.
+Where i, j and (n - i - j) denote the number of up-movements, mid-movements and down-movements of the stock respectively and S(0) is the initial stock price.
 
 
 We can then use the Cox-Ross-Rubenstein procedure with backward induction to find the prices of the option H(n,i,j) for each combination of movements at each time step n. The formula is as follows:
